@@ -2048,3 +2048,11 @@ input, select, textarea {
 		#footer .copyright a {
 			color: inherit;
 		}
+
+/* My Changes------>*/
+#baking-repository{
+	width: 200px;
+	height: 200px;
+	background-color: black;
+	z-index: 99999;
+}

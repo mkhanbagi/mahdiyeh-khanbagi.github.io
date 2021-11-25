@@ -1,4 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@100&display=swap');
 body,html {
   margin: 0;
   padding: 0;
@@ -27,22 +30,42 @@ main{
   height: 100vh;
 }
 
+
+/* Main Page 
+-------------------------*/
+#name{
+  display: inline;
+  font-size: 60px;
+  position: relative;
+  top: 50px;
+  left: 55px;
+  font-family: 'Caveat', cursive;
+  color: #5E5E8E;
+}
+
 .brain{
-    /*height: 79%;
-    width: 62%;*/
     height: 568px;
     width: 795px;
     position: relative;
-    top: 12%;
-    left: 30%;
-}
+    top: 60px;
+    left: 450px;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 40px;
+    }
+
 
 .br1{
     width: 55%;
     height: auto;
     position: absolute;
-    top: 1%;
+    top: 8%;
     left: 0;
+}
+
+#about{
+  position: absolute;
+  top: 42%;
+  left: 33%;
 }
 
 .br2{
@@ -51,6 +74,13 @@ main{
     position: absolute;
     top: 0;
     left: 27%;
+}
+
+#publication{
+  position: absolute;
+  top: 27%;
+  left: 40%;
+  font-size: 37px;
 }
 
 .br3{
@@ -62,6 +92,13 @@ main{
     z-index: 99999;
 }
 
+#contact-me{
+  position: absolute;
+  top: 33%;
+  left: 33%;
+  font-size: 30px;
+}
+
 .br4{
   width: 65%;
   height: auto;
@@ -70,57 +107,146 @@ main{
   left: 26%;
 }
 
+#gallery{
+  position: absolute;
+  top: 30%;
+  left: 35%;
+}
+
 .br5{
   width: 22%;
   height: auto;
   position: absolute;
   top: 50%;
-  left: 4%;
+  left: 2%;
+  z-index: 99999;
 }
 
-.About_Me{
-  position: relative;
-  background-color: #303124;
-  height: 100vh;
+#cv{
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  font-size: 35px;
 }
 
-#mysketch{
-  height: 100vh;
-  width: auto;
-  position: relative;
-  top: 0;
-  left: 60%;
-}
+/*.center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}*/
 
-/*	Toggle Menu
+  /* About Me 
 -------------------------*/
-.toggler-menu {
-  width: 40px;
-  height: 40px;
-  position: relative;
-  float: right;
-  margin: 0;
-  border-radius: 0;
-  padding: 0;
-  margin: 20px;
-  background: transparent;
-  border: none;
-  outline: none;
+#home-button-1{
+  width: 90px;
+  height: auto;
+  position: absolute;
+  top: 20px;
+  left: 20px;
 }
-  .toggler-menu span {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 25px;
-    height: 2px;
-    margin: auto;
-    box-shadow: 0px -8px 0 0px currentColor, 0px 8px 0 0px currentColor;
-    background: #191b13;
-    color: #191b13;
-  }
 
+.portrait{
+  /*height: 85vh;*/
+  height: 680px;
+  background-color: #C8C0A3;
+}
+
+.banner{
+  /*height: 85vh;*/
+  height: 680px;
+  width: auto;
+  float: right;
+}
+
+.sketch{
+  /*height: 85vh;*/
+  height: 678px;
+  position: absolute;
+  top: 0;
+  /*right: 10%;*/
+  right: 145px;
+}
+
+.my-story h1{
+  font-family: 'Poiret One', cursive;
+  font-size: 25px;
+}
+
+.my-story{
+  font-family: 'M PLUS 2', sans-serif;
+  font-size: 18px;
+}
+
+#my-background{
+  height: 550px;
+  width: 400px;
+  position: absolute;
+  top: 5%;
+  left: 25%;
+  z-index: 9999;
+  color: #F5EFD0;
+}
+
+.path{
+  background-color: #C8C0A3;
+  height: 90vh;
+  position: relative;
+}
+
+.my-path{
+  height: 100vh;
+  width: 90%;
+  position: absolute;
+  top: -80px;
+  right: 0;
+  left: 10%;
+}
+
+.interests{
+  background-color: #C8C0A3;
+  height: 600px;
+  position: relative;
+}
+
+.circle{
+  height: 500px;
+  float: right;
+  position: absolute;
+  top: 5%;
+  right: 8%;
+}
+
+.border{
+  height: 480px;
+  width: 350px;
+  position: absolute;
+  top: 5%;
+  left: 8%;
+}
+
+#research-experience{
+  height: 400px;
+  width: 600px;
+  position: absolute;
+  top: 15%;
+  left: 12%;
+  color: #303124;
+}
+
+#research-experience a{
+  color: #941751;
+}
+
+#up-button{
+  width: 50px;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+
+/* Contact Me 
+-------------------------*/
   .get-in-touch{
     height: 100vh;
   }
@@ -180,7 +306,7 @@ main{
   align-items: center;
 }
 
-#home-button{
+#home-button-2{
   width: 90px;
   height: auto;
   position: relative;
@@ -234,3 +360,4 @@ main{
   background-color: #36385C;
   border: none;
 }
+
