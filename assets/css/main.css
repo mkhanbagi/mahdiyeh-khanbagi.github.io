@@ -2,9 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 body,html {
   margin: 0;
   padding: 0;
+  background-color: #C8C0A3;
 }
 * {
   box-sizing: border-box;
@@ -25,15 +27,19 @@ a:visited{
   color: white;
 }
 
+a:hover{
+  opacity: 0.5;
+}
+
 main{
   background-color: #C8C0A3;
   height: 100vh;
 }
 
 
-/* Main Page 
+/* Main Page - index.html
 -------------------------*/
-#name{
+.name{
   display: inline;
   font-size: 60px;
   position: relative;
@@ -136,36 +142,96 @@ main{
   transform: translate(-50%, -50%);
 }*/
 
-  /* About Me 
--------------------------*/
-#home-button-1{
+  /* About_Me.html - Intro about myself
+--------------------*/
+/*#home-button-1{
   width: 90px;
   height: auto;
   position: absolute;
   top: 20px;
   left: 20px;
+}*/
+
+#header{
+  height: 150px;
+  background-color: #C8C0A3;
+  padding-left: 100px;
+}
+#header a{
+  color: #5E5E8E;
 }
 
-.portrait{
+#intro{
+  width: 100%;
+  height: 500px;
+  background-color: #C8C0A3;
+ /*display: flex;
+  justify-content: center;*/
+}
+
+#havij{
+  height: 500px;
+  padding-left: 50px;
+}
+
+#about-me{
+  width: 100%;
+  height: 500px;
+  position: absolute;
+  top: 150px;
+  display: flex;
+  justify-content: right;
+}
+
+.border{
+  height: 500px;
+  width: 350px;
+}
+
+#border-right{
+  width: 600px;
+  height: 450px;
+  position: absolute;
+  right: 50px;
+}
+
+#my-background{
+  width: 500px;
+  text-align: justify;
+  position: absolute;
+  top: 80px;
+  right: 150px;
+}
+
+
+  /* About_Me.html - Girl with a Pearl Earing 
+--------------------*/
+#portrait{
   /*height: 85vh;*/
   height: 680px;
-  background-color: #C8C0A3;
+  background-color: #303124;
+  position: relative;
+  top: 0;
 }
 
-.banner{
-  /*height: 85vh;*/
+/*.banner{
+  height: 85vh;
   height: 680px;
   width: auto;
   float: right;
-}
+}*/
 
-.sketch{
+#sketch{
   /*height: 85vh;*/
-  height: 678px;
+  height: 680px;
   position: absolute;
   top: 0;
   /*right: 10%;*/
   right: 145px;
+}
+.my-story{
+  font-family: 'M PLUS 2', sans-serif;
+  font-size: 18px;
 }
 
 .my-story h1{
@@ -173,69 +239,55 @@ main{
   font-size: 25px;
 }
 
-.my-story{
-  font-family: 'M PLUS 2', sans-serif;
-  font-size: 18px;
+.my-story a{
+  color: #941751;
 }
 
-#my-background{
-  height: 550px;
-  width: 400px;
+#my-interests{
+  width: 600px;
   position: absolute;
-  top: 5%;
-  left: 25%;
+  top: 50px;
+  left: 100px;
   z-index: 9999;
   color: #F5EFD0;
+  text-align: justify;
 }
 
-.path{
+  /* About_Me.html - Research Experiences
+--------------------
+#research{
   background-color: #C8C0A3;
-  height: 90vh;
-  position: relative;
-}
-
-.my-path{
-  height: 100vh;
-  width: 90%;
-  position: absolute;
-  top: -80px;
-  right: 0;
-  left: 10%;
-}
-
-.interests{
-  background-color: #C8C0A3;
+  text-align: justify;
   height: 600px;
   position: relative;
 }
 
-.circle{
-  height: 500px;
-  float: right;
-  position: absolute;
-  top: 5%;
-  right: 8%;
-}
-
-.border{
-  height: 480px;
-  width: 350px;
-  position: absolute;
-  top: 5%;
-  left: 8%;
-}
-
 #research-experience{
-  height: 400px;
+  height: 500px;
   width: 600px;
-  position: absolute;
-  top: 15%;
-  left: 12%;
+  position: relative;
+  top: 50px;
+  left: 50px;
   color: #303124;
 }
 
-#research-experience a{
-  color: #941751;
+#border-left{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+#research-background{
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+#alz-poster{
+  width: 600px;
+  position: absolute;
+  right: 80px;
+  top: 80px;
 }
 
 #up-button{
@@ -243,12 +295,12 @@ main{
   position: absolute;
   right: 20px;
   bottom: 20px;
-}
+}*/
 
-/* Contact Me 
+/* About-Me.html - Contact Me 
 -------------------------*/
-  .get-in-touch{
-    height: 100vh;
+#get-in-touch{
+    height: 80vh;
   }
 
 #microphone{
@@ -264,7 +316,7 @@ main{
   width: auto;
 }
 
-.social_networks{
+#social_networks{
   background-color: #5E5E5E;
   width: 100%;
   height: 28%;
@@ -297,10 +349,10 @@ main{
   margin-left: 1%;
 }
 
-#copyright{
+.copyright{
   background-color: #36385C;
   color: white;
-  height: 7%;
+  height: 10%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -313,7 +365,7 @@ main{
   top: 48%;
 }
 
-.contact-form{
+/*.contact-form{
   float: right;
   width: 50%;
   height: 45%;
@@ -359,5 +411,43 @@ main{
   margin-top: 1%;
   background-color: #36385C;
   border: none;
+}*/
+
+#know-more{
+  float: right;
+  width: 600px;
+  position: relative;
+  top: 120px;
+  right: 400px;
+  font-size: 150%;
 }
 
+/* Publications.html 
+-------------------------*/
+
+.publications{
+  margin-top: 2%;
+  margin-right: 10%;
+  margin-left: 10%;
+  padding-bottom: 5%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px; 
+  color: #383633;
+
+}
+ .publications a{
+  color: #006699;
+ }
+
+ .publications li{
+  padding: 1%;
+ }
+
+ .title{
+  font-size: 30px;
+  margin: 5%;
+ }
+
+#footer{
+  height: 8vh;
+}

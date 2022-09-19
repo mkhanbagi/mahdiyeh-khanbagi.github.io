@@ -417,7 +417,12 @@ input, select, textarea {
 				justify-content: center;
 				padding: 1em 3em;
 			}
-
+#bake-col{
+	width:50px
+}
+#click2bake{
+	color: #303124;
+}
 				#main .item.intro h1 {
 					font-size: 3em;
 					line-height: 1em;
